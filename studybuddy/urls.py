@@ -20,5 +20,21 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name=home),
-]
+    path('',views.home,name='home'),
+    path('softskills/',views.softskills,name='softskills'),
+    path('softskillsadd',views.softskillsadd,name='softskillsadd'),
+    path('technical/',views.technical,name='technical'),
+    path('technicaladd',views.technicaladd,name='technicaladd'),
+    path('register/',views.register,name='register'),
+    path('login/',views.login,name='login'),
+    path('creation/',views.creation,name='creation'),
+    path('userlogin/',views.userlogin,name='userlogin'),
+    path('community/',views.community,name='community'),
+    path('mentor/',views.mentor,name='mentor'),
+    path('nontechnical/',views.nontechnical,name='nontechnical'),
+    path('join/',views.join,name='join'),
+    path('create/',views.create,name='create'),
+    path('smartschedular/',views.smartschedular,name='smartschedular'),
+    path('mycollge/',views.mycollege,name='mycollege'),
+    path('mygroup/',views.mygroup,name='mygroup'),
+    ]
